@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource name="jdbc/blueshipDB"
+          auth="Container"
+          type="javax.sql.DataSource"
+          validationQuery="SELECT 1"
+          validationInterval="30000"
+          maxActive="100"
+          minIdle="10"
+          maxWait="10000"
+          initialSize="10"
+          jmxEnabled="true"
+          username="root"
+          password=""
+          driverClassName="com.mysql.cj.jdbc.Driver"
+          url="jdbc:mysql://localhost:3306/xrade"/>
+<Resource name="mail/blueshipSession"
+   		auth="Container"
+        type="javax.mail.Session"
+        username="xampydev@gmail.com"
+        password="Informatique@2000"
+        mail.debug="false"
+        mail.transport.protocol="smtp"
+        mail.smtp.host= "smtp.gmail.com"
+        mail.smtp.auth= "true"
+        mail.smtp.port= "587"
+        mail.smtp.starttls.enable="true"
+        description="Global E-Mail Resource for bluship app"/>
+</Context>

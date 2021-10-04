@@ -1,0 +1,12 @@
+API_CONTEXT_PATH_TWO "xrade/api/v1
+
+--resources
+#analysis --description "Contains all data that match analysis bot market and data"
+post --name saveMarketAnalysis --url /analysis/market_analysis
+post --name saveAnalysisData --url /analysis/analysis_data
+put --name updateMarketAnalysis --url /analysis/market_analysis
+put --name updateAnalysisData --url /analysis/analysis_data
+delete --name deleteMarketAnalysis --url /analysis/market_analysis  --ignore
+delete --name deleteAnalysisData --url /analysis/analysis_data --ignore
+get --name getNextAnalysis --url /analysis  --params {offset?: int, limit?: int}
+get --name getNextFullAnalysis --url /analysis/full  --params {offset?: int, limit?: int}
